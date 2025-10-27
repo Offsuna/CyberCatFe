@@ -1,0 +1,147 @@
+/* ===========================
+   Estils per Serveis, Xarxes i Adopta
+   =========================== */
+
+/* CONTENIDOR PRINCIPAL */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* INTRODUCCIÓ */
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #222;
+}
+
+/* ===========================
+   SECCIÓ SERVEIS
+   =========================== */
+.serveis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.servei {
+  background-color: var(--color-principal);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--sombra);
+  transition: transform 0.2s ease;
+}
+
+.servei:hover {
+  transform: translateY(-5px);
+}
+
+.servei h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.servei p {
+  font-size: 1rem;
+}
+
+/* ===========================
+   SECCIÓ XARXES
+   =========================== */
+.xarxes-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.xarxa-card {
+  background-color: var(--color-fondo);
+  border-radius: 12px;
+  padding: 25px 15px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: all 0.2s ease;
+}
+
+.xarxa-card:hover {
+  transform: scale(1.05);
+  background-color: var(--color-principal);
+}
+
+.xarxa-card img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+/* ===========================
+   SECCIÓ ADOPTA
+   =========================== */
+.gats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.gat-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.gat-card:hover {
+  transform: translateY(-5px);
+}
+
+.gat-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.gat-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.gat-card p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* CONTACTE */
+.contacte {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.1rem;
+}
+
+.contacte a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.contacte a:hover {
+  color: var(--color-principal);
+}

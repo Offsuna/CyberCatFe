@@ -1,110 +1,150 @@
 <!DOCTYPE html>
-<html lang="cat">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CyberCatfe</title>
-  <link rel="icon" type="image/x-icon" href="/img/favicon.svg">
-  <link rel="stylesheet" href="/css/styles.css" />
-</head>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adopta | CyberCatfe</title>
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/buttons.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/extra.css" />
+  </head>
 
-<body>
-  <!--Top de la pagina-->
-  <header>
-  <nav class="navbar">
-    <!-- Contenedor del logo -->
-    <a href="index.html" class="logo-container">
-      <img src="/img/logofinal1-removebg-preview.png" class="logoimg" alt="Logo">
-      <span class="logo">CyberCatfe</span>
-    </a>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo-container">
+          <img
+            src="/img/logofinal1-removebg-preview.png"
+            class="logoimg"
+            alt="Logo"
+          />
+          <span class="logotext">CyberCatfe</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="carta.html">Carta</a></li>
+          <li><a href="local.html">Local</a></li>
+          <li><a href="adopta.html">Adopta</a></li>
+          <li><a href="xarxes.html">Contacte</a></li>
+          <li><a href="xarxes.html">Streaming</a></li>
+          <li><a href="serveis.html">Serveis</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <!-- Menú responsive -->
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">☰</label>
+    <main class="container">
+      <section class="intro">
+        <h1>Adopta un amic pelut</h1>
+        <p>
+          Al <strong>CyberCatfe</strong> col·laborem amb refugis locals per
+          ajudar gats a trobar una nova llar.
+        </p>
+      </section>
 
-    <!-- Enlaces del navbar -->
-    <ul class="nav-links">
-      <li><a href="index.html">Inici</a></li>
-      <li><a href="carta.html">Carta</a></li>
-      <li><a href="local.html">Local</a></li>
-      <li><a href="adopta.html">Adopta</a></li>
-      <li><a href="xarxes.html">Contacte</a></li>
-    </ul>
-  </nav>
-</header>
-
-<!--MAIN -->
-  <section class="main">
-      <div class="main-content">
-      <h1>CyberCatfe</h1>
-      <p>Un espai Zen amb companyia gatuna</p>
-      <a href="carta.html" class="btn">Carta</a>
-      </div>
-      <div class="catimg">
-        <img src="/img/blackcat1.1.PNG" class="cat1">
-        <img src="/img/blackcat1.2.PNG" class="cat2">
-      </div>
-  </section>
-
-  <!-- SECCIÓN DESTACADOS -->
-  <section class="features">
-    <h2>Per què visitar-nos?</h2>
-    <div class="feature-container">
-      <a href="carta.html" class="feature-link">
-        <div class="feature">
-        <img src="/img/cafe1.png" alt="Café artesanal">
-        <h3>Cafè artesanal</h3>
-        <p>Proba els nostres cafès d'especialitat.</p>
+      <section class="gats-grid">
+        <div class="gat-card">
+          <img src="/img/car1.jpg" alt="Gat 1" />
+          <h2>Pixel</h2>
+          <p>
+            Curiós, juganer i sempre atent a les teves partides. Té 2 anys i li
+            encanta el soroll dels teclats.
+          </p>
         </div>
-      </a>
-      <a href="carta.html" class="feature-link">
-        <div class="feature">
-        <img src="/img/sanwitch1.png" alt="Sandwitch">
-        <h3>Esmorzars i berenars</h3>
-        <p>Esmorza o berena de forma saludable.</p>
-      </div>
-      </a>
-      <a href="local.html" class="feature-link">
-      <div class="feature">
-        <img src="/img/CATZONE-LOGO.png" alt="Zona de gatos">
-        <h3>Zona de gats</h3>
-        <p>Relaxa't una estona interactuant amb els nostres felins.</p>
-      </div>
-      </a>
-      <a href="adopta.html" class="feature-link">
-      <div class="feature">
-        <img src="/img/adopta1.png" alt="Adopción responsable">
-        <h3>Adopta</h3>
-        <p>Coneix els gats en adopció i adopta responsablement.</p>
-      </div>
-      </a>
-      
-      <a href="xarxes.html" class="feature-link">
-      <div class="feature">
-        <img src="/img/streaming.png" alt="Emisió en directe">
-        <h3>Streaming</h3>
-        <p>No pots pasar-te pel local? Cap problema! Revisa el directe a qualsevol lloc.</p>
-      </div>
-      </a>
-      
-      <a href="serveis.html" class="feature-link">
-      <div class="feature">  
-        <img src="/img/automation1.png" alt="Adopción responsable">
-        <h3>Sistemes avançats</h3>
-        <p>Local equipat amb tecnologies d'automatització.</p>
-      </div>
-      </a>
-      
+        <div class="gat-card">
+          <img src="/img/car2.jpg" alt="Gat 2" />
+          <h2>Cookie</h2>
+          <p>
+            Dolça i tranquil·la, busca una llar amb amor i moltes carícies. Té 3
+            anys.
+          </p>
+        </div>
+        <div class="gat-card">
+          <img src="/img/car3.jpg" alt="Gat 3" />
+          <h2>Byte</h2>
+          <p>
+            Petit explorador amb esperit aventurer. Ideal per famílies actives o
+            gamers nocturns.
+          </p>
+        </div>
+        <div class="gat-card">
+          <img src="/img/car4.jpg" alt="Gat 4" />
+          <h2>Luna</h2>
+          <p>
+            Dolça i tranquil·la, li encanta dormir a prop dels clients i
+            escoltar música relaxant. Té 4 anys.
+          </p>
+        </div>
 
-    </div>
-  </section>
+        <div class="gat-card">
+          <img src="/img/car5.jpg" alt="Gat 5" />
+          <h2>Neo</h2>
+          <p>
+            Un veritable hacker! Intel·ligent i curiós, sempre es fica entre els
+            cables. Té 1 any i mig.
+          </p>
+        </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 CyberCatfe · Tots els drets reservats</p>
-    <p>Síguenos en redes:
-      <a href="#">Instagram</a> · <a href="#">Twitch</a> · <a href="#">YouTube</a>
-    </p>
-  </footer>
-</body>
+        <div class="gat-card">
+          <img src="/img/car6.jpg" alt="Gat 6" />
+          <h2>Mochi</h2>
+          <p>
+            Petit, juganer i afectuós. Sempre busca mims i no diu mai que no a
+            una caixa de cartró.
+          </p>
+        </div>
+
+        <div class="gat-card">
+          <img src="/img/car7.jpg" alt="Gat 7" />
+          <h2>Chip</h2>
+          <p>
+            Li encanten les pantalles i les llums LED. Té molta energia i adora
+            perseguir el ratolí del PC.
+          </p>
+        </div>
+
+        <div class="gat-card">
+          <img src="/img/car8.jpg" alt="Gat 8" />
+          <h2>Nube</h2>
+          <p>
+            Gata blanca i suau com el seu nom indica. Té 5 anys i és ideal per
+            una llar tranquil·la.
+          </p>
+        </div>
+
+        <div class="gat-card">
+          <img src="/img/car9.jpg" alt="Gat 9" />
+          <h2>Kira</h2>
+          <p>
+            Aventurera i curiosa, li agrada inspeccionar cada racó del
+            CyberCatfe. Té 2 anys i mig.
+          </p>
+        </div>
+
+        <div class="gat-card">
+          <img src="/img/car10.jpg" alt="Gat 10" />
+          <h2>Shadow</h2>
+          <p>
+            Elegant i misteriós, amb un cor d’or. Té 6 anys i adora dormir al
+            costat del teclat.
+          </p>
+        </div>
+      </section>
+
+      <section class="contacte">
+        <p>
+          Vols adoptar? Contacta amb nosaltres a
+          <a href="mailto:info@cybercatfe.cat">info@cybercatfe.cat</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 CyberCatfe — Donant segones oportunitats als nostres felins
+        💚🐾
+      </p>
+    </footer>
+  </body>
 </html>
