@@ -1,0 +1,189 @@
+/* Carta principal */
+.carta-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-left: 10px solid var(--color-principal);
+  border-right: 10px solid var(--color-principal);
+  border-bottom: 12px solid var(--color-principal);
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-bottom: 15%;
+}
+
+.carta-main h1 {
+  padding-top: 5%;
+  font-size: 3em;
+  margin-bottom: 15px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 var(--color-secundario);
+}
+
+.carta-main p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  text-align: justify;
+  font-weight: bold;
+  color: black;
+}
+
+/* Contenedor de items */
+.carta-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Cada item de la carta */
+.carta-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--color-principal);
+  border-radius: 15px;
+  box-shadow: var(--sombra);
+  max-width: 300px;
+  min-height: 350px; /* altura uniforme */
+  padding: 20px;
+  padding-top: 25px;
+  transition: transform 0.3s;
+}
+
+.carta-item:hover {
+  transform: translateY(-8px);
+}
+
+.carta-item img {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  max-width: 60%;
+}
+
+.carta-item h3 {
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 0 var(--color-secundario);
+  
+}
+
+.carta-item p {
+  font-size: 0.95em;
+  color: var(--color-texto);
+  text-align: center;
+}
+
+/* Eliminar estilo de los anchors */
+a.nostyle {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.nostyle:hover {
+  transform: scale(1.02);
+}
+
+/* Divs de detalle de la carta */
+.div-cafes {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--color-fondo);
+  border-radius: 15px;
+  box-shadow: var(--sombra);
+  margin: 5% auto; /* margen vertical y centrado horizontal */
+  padding: 20px;
+  max-width: 80%;
+  transition: transform 0.3s;
+}
+
+.div-cafes + .div-cafes {
+  margin-top: 60px; /* más espacio entre divs de detalle */
+}
+
+.div-cafes img {
+  border-radius: 10px;
+  max-width: 250px;
+  height: auto;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.div-cafes .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.div-cafes h3 {
+  font-size: 1.8rem;
+  margin: 0;
+   font-weight: bold;
+  color: black;
+  text-shadow: 1px 1px 0 var(--color-secundario);
+}
+
+.div-cafes p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  text-align: justify;
+  font-weight: bold;
+  color: black;
+}
+
+/* MEDIA QUERIES AJUSTADAS */
+@media (max-width: 768px) {
+  .carta-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carta-item {
+    max-width: 90%;
+    min-height: auto; /* altura se adapta en móvil */
+  }
+
+  .div-cafes {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .div-cafes img {
+    margin-right: 0;
+    margin-bottom: 15px;
+    max-width: 120px; /* tamaño uniforme */
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .carta-main h1 {
+    font-size: 2em;
+  }
+
+  .carta-main p {
+    font-size: 0.95em;
+  }
+
+  .div-cafes img {
+    max-width: 100px; /* aún más pequeña en móviles pequeños */
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .div-cafes h3 {
+    font-size: 1.5rem;
+  }
+
+  .div-cafes p {
+    font-size: 0.95rem;
+  }
+}

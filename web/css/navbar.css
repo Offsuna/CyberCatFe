@@ -1,0 +1,83 @@
+header {
+  background-color: var(--color-principal);
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+}
+
+.logoimg {
+  max-height: 55px;
+  max-width: 55px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  background-color: var(--color-principal);
+  color: var(--color-texto);
+  font-weight: bold;
+}
+
+/* Menú hamburguesa */
+.menu-icon {
+  display: none;
+  font-size: 2.5em;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* MEDIA QUERIES NAVBAR */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background-color: var(--color-secundario);
+    width: 220px;
+    flex-direction: column;
+    text-align: right;
+    display: none;
+    padding: 15px;
+    border-radius: 0 0 0 10px;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

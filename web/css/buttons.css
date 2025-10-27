@@ -1,0 +1,15 @@
+.btn {
+  display: inline-block;
+  background-color: var(--color-principal);
+  color: var(--color-texto);
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffd57a;
+  transition: background 0.3s;
+}
